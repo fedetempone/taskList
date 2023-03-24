@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Delicious Handrawn', cursive;
+  line-height: 1.5;
+  background-color: lightseagreen;
+  color: white;
+  background: url(./img/fondo.avif);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+
+h1 {
+  text-align: center;
+  color: #8b1394;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  padding: 30px;
+  box-shadow: 3px 8px 18px -1px rgba(0, 0, 0, 0.75);
+}
+
+.tareasList {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #a5acf2;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  height: 15px;
+  font-size: 12px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+  background: transparent;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  color: white;
+  margin-left: 10px;
+  border: none;
+  font-family: fantasy;
+  background-color: #8b1394;
+  font-size: 15px;
+  outline: none;
+  border-radius: 24px;
+}
+
+.empty {
+  color: darkslategrey;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(250, 250, 250, 0.75);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 3px 8px 18px -1px rgba(0, 0, 0, 0.75);
+  padding: 16px 5px;
+  color: blueviolet;
+}
+
+.tiposDeTarea{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#elegirTipoDeTarea{
+  width: 50%;
+  padding: 5px;
+  background-color: #8b1394;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border-radius: 20px;
+  border: none;
+  background-color: brown;
+  color: beige;
+  font-weight: bold;
+  height: 32px;
+  width: 33px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-delete:hover {
+  background-color: transparent;
+  color:brown;
+  cursor: pointer;
+  border: 1px solid brown;
+}
+
+.btn-add:hover{
+  background-color: transparent;
+  color: #8b1394;
+  border: 1px solid #8b1394;
+  cursor: pointer;
+}
+
+.parrafoAlertaUrgente{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 8px;
+  color: red;
+  margin-right: 5px;
+}
+.parrafoAlertaModerado{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 8px;
+  color: blue;
+  margin-right: 5px;
+}
+.parrafoAlertaPuedeEsperar{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 8px;
+  color: green;
+  margin-right: 5px;
+}
+
+.liAlertaUrgente{
+  border: 2px solid red;
+}
+.liAlertaModerado{
+  border: 2px solid blue;
+}
+.liAlertaPuedeEsperar{
+  border: 2px solid green;
+}
+
+@media (max-width:260px){
+  .container{
+    width: 60%;
+    margin-top: 0px;
+  }
+
+  h1{
+    font-size: 25px;
+  }
+
+  form{
+    flex-direction: column;
+  }
+
+  input{
+    height: 27px;
+    padding: 5px;
+  }
+
+  .btn-add{
+    margin: 5px auto;
+    width: 35px;
+    height: 35px;
+  }
+}
